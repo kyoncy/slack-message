@@ -1,0 +1,21 @@
+{
+  "name": "slack-message",
+  "version": "1.0.0",
+  "description": "post message to slack",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt"
+  },
+  "repository": "git@github.com:kyoncy/issue-comment-actions.git",
+  "author": "kyoncy <kyota.n.2014@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/webhooks": "^7.21.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.26.1"
+  }
+}
