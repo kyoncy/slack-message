@@ -1,0 +1,11 @@
+name: post message to slack
+
+on: push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK }}
