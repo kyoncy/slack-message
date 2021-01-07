@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "post message to slack",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt"
   },
@@ -12,8 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0",
-    "@octokit/webhooks": "^7.21.0"
+    "@slack/webhook": "^5.0.4"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.26.1"
