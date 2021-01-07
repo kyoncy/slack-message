@@ -1,0 +1,17 @@
+name: "slack message"
+author: "kyoncy"
+description: "post message to slack"
+branding:
+  icon: slack
+  color: green
+inputs:
+  token:
+    description: "GitHub token for use by this action."
+    required: false
+    default: ${{ github.token }}
+  webhook:
+    description: "Slack webhook url."
+    required: true
+runs:
+  using: "node12"
+  main: "dist/index.js"
