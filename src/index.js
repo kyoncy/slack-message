@@ -1,4 +1,4 @@
-import core from '@actions/core';
+const core = require('@actions/core');
 const { IncomingWebhook } = require('@slack/webhook');
 
 try {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "post message to slack",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt"
   },
