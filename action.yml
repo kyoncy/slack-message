@@ -12,6 +12,21 @@ inputs:
   webhook:
     description: "Slack webhook url."
     required: true
+  slack_username:
+    description: "Slack user name."
+    required: false
+    default: "Github Actions"
+  slack_icon_url:
+    description: "Slack user name."
+    required: false
+  slack_color:
+    description: "Slack attachments color."
+    required: false
+    default: "good"
+  slack_title:
+    description: "Slack attachments title."
+    required: false
+    default: ":tada:"
 runs:
   using: "node12"
   main: "dist/index.js"
